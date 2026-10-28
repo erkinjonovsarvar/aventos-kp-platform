@@ -1,0 +1,56 @@
+# Maxfiy sozlamalar (parollar) — hech qachon GitHub'ga yuklanmaydi
+.env
+.env.*
+!.env.example
+
+# Biznes ma'lumotlari (Excel) — GitHub'ga yuklanmaydi, alohida zaxiralanadi
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+~$*
+
+# Ma'lumot papkalari
+01_SOURCE_DATABASE/
+AHU SO'ROVLAR/
+TAYYOR NATIJALAR/
+Astatka fayl/
+Database/
+Telegram/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+dist/
+
+# Tizim / tahrirlovchi
+.vscode/
+Thumbs.db
+desktop.ini
+*.log
+.pytest_cache/
+
+# KP Excel shabloni (firma blanki, bo'sh jadval — mijoz ma'lumoti yo'q)
+!backend/app/templates/kp_template.xlsx
+
+# ishga tushirish yorlig'i yozadigan vaqtinchalik fayllar
+scripts/tunnel.log
+scripts/havola.txt
+
+# Baza zaxiralari va arxivlar — hech qachon GitHub'ga yuklanmaydi (2026-10-20)
+*.dump
+*.dump.enc
+*.enc
+*.zip
+
+# Yuborilgan KP fayllari (mijoz ma'lumoti, PDF/Excel) — GitHub'ga yuklanmaydi (2026-10-21)
+Quotations/
+# TypeScript build keshi
+*.tsbuildinfo
+
+# Shogird uchun paket (nusxa; manbalar repoda bor)
+SHOGIRD_PAKET/

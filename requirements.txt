@@ -1,0 +1,24 @@
+# Backend (veb-server)
+fastapi
+uvicorn[standard]
+# Ma'lumotlar bazasi (PostgreSQL)
+sqlalchemy
+alembic
+psycopg[binary]
+# Login va parollar
+passlib[argon2]
+python-jose[cryptography]
+# Sozlamalar (.env)
+python-dotenv
+pydantic-settings
+# Excel bilan ishlash
+openpyxl
+defusedxml        # AHU fayl (xlsx) ichidagi XML hujumlaridan himoya — openpyxl o'zi ishlatadi (xavfsizlik auditi 2026-10-17)
+pandas
+pywin32
+pypdfium2        # KP PDF: muqova + Excel sahifalarini birlashtirish (kp_pdf.py)
+# Testlar
+pytest
+httpx
+python-multipart
+lxml
